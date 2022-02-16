@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">        
+        <h1>Cachorromêtro</h1>
+        <div>
+        <h2>Escolha em qual estágio o seu pet está:</h2>
+        <select id="estagio" name="estagio">
+            <option onclick="mostrar()" value="adulto">Adulto</option>
+            <option onclick="mostrar()" value="filhote">Filhote</option>
+        </select>
+        </div>
+        
+        <div id="hpeso" class="hidden">
+        <input id="peso" name="peso" type="number" placeholder="Peso em KG"></input>
+        </div>
+        
+        <div id="htempo" class="hidden">
+        <input id="tempo" name="tempo" type="number" placeholder="Tempo em dias">
+        </div>
+
+        <div class="hidden" id="hbutton">
+        <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <input id="proximo" type="button" value="Próximo" onClick="mostrar()">
+        <button id="reload" onclick="reload()" class="hidden">Voltar</button>
+
+        
+
+        <div id="resultado">
+
+        </div>
+    </div>
+
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
